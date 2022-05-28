@@ -1,0 +1,35 @@
+{
+	"name": "@vladfrangu/typescript-import-mappings-error",
+	"version": "1.0.0",
+	"description": "Shows off an import mappings issue with TypeScript in Node16 mode",
+	"main": "dist/Highlight.js",
+	"type": "module",
+	"scripts": {
+		"build": "tsc",
+		"clean": "npx rimraf dist",
+		"cleanbuild": "npm run clean && tsc"
+	},
+	"private": true,
+	"author": {
+		"name": "Vlad Frangu",
+		"email": "kingdgrizzle@gmail.com"
+	},
+	"engines": {
+		"node": ">= 16.0.0"
+	},
+	"devDependencies": {
+		"@sapphire/eslint-config": "^4.3.5",
+		"@sapphire/ts-config": "^3.3.4",
+		"@types/node": "^17.0.35",
+		"@typescript-eslint/eslint-plugin": "^5.26.0",
+		"@typescript-eslint/parser": "^5.26.0",
+		"eslint": "^8.16.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-prettier": "^4.0.0",
+		"prettier": "^2.6.2",
+		"typescript": "^4.7.2"
+	},
+	"imports": {
+		"#internals/*": "./dist/internals/*.js"
+	}
+}

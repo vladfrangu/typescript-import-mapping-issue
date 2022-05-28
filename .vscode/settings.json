@@ -1,0 +1,5 @@
+{
+	// Setting this to "index" solves it (however it then would not work with relative imports!)
+	// The "auto" mode will append extensions by default, which the TypeScript immediately complains as not valid
+	"typescript.preferences.importModuleSpecifierEnding": "auto"
+}
